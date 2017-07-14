@@ -102,7 +102,7 @@ if (args.file1_name == 'empty_string'):
     sys.exit()
 # If the file is open, tell user to close file and try again.    
 elif args.file1_name.closed() is False:
-    print("\nERROR: The file is open! Please close it and run again.
+    print("\nERROR: The file is open! Please close it and run again.")
     sys.exit()      
 else:
     # Save off file name arguments
