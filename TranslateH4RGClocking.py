@@ -95,10 +95,15 @@ print(parser)
 # Set clear_only to all lower case for testing against
 clear_only = args.clear_only.lower()
 
+
 # If no file name to process, display error and get out.
 if (args.file1_name == 'empty_string'):
     print("\nERROR: No parameters given! Please add file name to process.")
     sys.exit()
+# If the file is open, tell user to close file and try again.    
+elif args.file1_name.closed() is False:
+    print("\nERROR: The file is open! Please close it and run again.
+    sys.exit()      
 else:
     # Save off file name arguments
     file1_name = args.file1_name
