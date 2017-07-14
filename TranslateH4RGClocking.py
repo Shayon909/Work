@@ -90,7 +90,9 @@ parser = argparse.ArgumentParser()
 parser.add_argument("file1_name", nargs='?', default="empty_string")
 parser.add_argument("clear_only", nargs='?', default="empty_string")
 args = parser.parse_args()
+print(args)
 print(parser)
+print(file1_name)
 
 # Set clear_only to all lower case for testing against
 clear_only = args.clear_only.lower()
